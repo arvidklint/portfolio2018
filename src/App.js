@@ -1,10 +1,13 @@
 import React from "react"
 
 import Header from './components/Header'
+import Swirl from './components/Swirl'
 
 const App = () => {
   return (
-    <Header />
+    <div>
+      <Swirl />
+    </div>
   );
 };
 

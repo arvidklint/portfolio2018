@@ -20,7 +20,7 @@ class Header extends Component {
     })
     this.camera.translate(0, 0, 4)
 
-    this.app = PicoGL.createApp(this.canvas).clearColor(0.0, 0.0, 0.0, 1.0).defaultViewport().depthTest()
+    this.app = PicoGL.createApp(this.canvas).clearColor(0.0, 0.0, 0.0, 0.0).defaultViewport().depthTest()
 
     this.program = this.app.createProgram(vertexShaderSource, fragmentShaderSource)
 

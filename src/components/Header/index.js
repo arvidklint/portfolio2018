@@ -7,8 +7,8 @@ import Camera from '../../modules/camera'
 
 import { planeVertices } from '../../modules/vertexBuffers/plane'
 
-import vertexShaderSource from '../../shaders/vertexShaderSource'
-import fragmentShaderSource from '../../shaders/fragmentShaderSource'
+import vertexShaderSource from '../../shaders/basicLight/vertex'
+import fragmentShaderSource from '../../shaders/basicLight/fragment'
 
 class Header extends Component {
   componentDidMount() {

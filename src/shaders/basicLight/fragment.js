@@ -17,8 +17,8 @@ out vec4 fragColor;
 void main() {
   fragColor = vec4(vPosition, 1.0);
   int mode = 3;
-  vec3 ambientColor = vec3(0.2, 0.0, 0.0);
-  vec3 diffuseColor = vec3(0.5, 0.0, 0.0);
+  vec3 ambientColor = vec3(1.0, 0.5, 0.1);
+  vec3 diffuseColor = vec3(1.0, 0.2, 0.1);
   vec3 specularColor = vec3(1.0, 1.0, 1.0);
   float shininessVal = 4.0;
   float Ka = 1.0;

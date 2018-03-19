@@ -83,7 +83,7 @@ class Camera {
     }
     const translation = vec3.create()
     mat4.getTranslation(translation, this.cameraMatrix.matrix)
-    //console.log(translation)
+    // console.log(translation)
   }
 }
 

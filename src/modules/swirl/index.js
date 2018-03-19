@@ -1,45 +1,6 @@
 import SimplexNoise from 'simplex-noise'
 
-class Vec2 {
-  constructor(x, y) {
-    this.x = x
-    this.y = y
-  }
-
-  add(other) {
-    this.x += other.x
-    this.y += other.y
-    return this
-  }
-
-  multiply(value) {
-    this.x *= value
-    this.y *= value
-    return this
-  }
-
-  get copy() {
-    return new Vec2(this.x, this.y)
-  }
-
-  get magnitude() {
-    return Math.sqrt(this.x * this.x + this.y * this.y)
-  }
-
-  setMagnitude(value) {
-    const currentMagnitude = Math.sqrt(this.x * this.x + this.y * this.y)
-    const ratio = value / currentMagnitude
-    this.x *= ratio
-    this.y *= ratio
-    return this
-  }
-
-  static createFromAngle(angle) {
-    const x = Math.sin(angle)
-    const y = Math.cos(angle)
-    return new Vec2(x, y)
-  }
-}
+import Vec2 from '../vector/Vec2'
 
 class SwirlyLine {
   constructor({
